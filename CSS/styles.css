@@ -1,0 +1,106 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.heading {
+  font-size: 60px;
+  letter-spacing: 7px;
+  word-spacing: 12px;
+  text-transform: uppercase;
+  color:rgb(238, 238, 238);
+}
+
+.photoContainer {
+  margin-top: 225px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+  /* The mercuryInfo (background) */
+  .infoBoxes {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 75px;
+  }
+
+   /* mercuryInfo */
+   .infoBoxes-content {
+    background-color: #0f0101;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid rgb(238, 15, 15);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  p {
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin: 15px;
+    text-transform: none;
+  }
+
+  .title {
+    border: 1px solid rgb(238, 15, 15);
+  }
+
+  span {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .textArea {
+    text-transform:none;
+    margin-top: 125px;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  .text-1, .text-2, .text-3, .text-4, .text-5, .text-6, .text-7, .text-8 {
+    display: none;
+    position: absolute;
+    left: 45%;
+  }
+
+  .active {
+    display: block;
+  }
