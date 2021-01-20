@@ -1,5 +1,5 @@
 var starSpeed = 0.01; // Change the star speed from here.
-var starImg = new THREE.TextureLoader().load('Photos/star.png');
+var starImg = new THREE.TextureLoader().load('Photos/star.png'); // Change star photo.
 
 let scene, camera, renderer, stars, starGeo;
 

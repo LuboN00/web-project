@@ -25,7 +25,7 @@ canvas {
 }
 
 .photoContainer {
-  margin-top: 225px;
+  margin-top: 250px;
 }
 
 .image {
@@ -33,25 +33,24 @@ canvas {
   height: 200px;
 }
 
-  /* The mercuryInfo (background) */
+  /* InfoBoxe's */
   .infoBoxes {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed;
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; 
+    height: 100%; 
+    overflow: scroll; 
     padding-top: 75px;
   }
 
-   /* mercuryInfo */
    .infoBoxes-content {
     background-color: #0f0101;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
     border: 1px solid rgb(238, 15, 15);
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
   }
 
   /* Add Zoom Animation */
@@ -79,7 +78,7 @@ canvas {
     text-transform: none;
   }
 
-  .title {
+  .infoTitle {
     border: 1px solid rgb(238, 15, 15);
   }
 
@@ -89,9 +88,10 @@ canvas {
   }
 
   .textArea {
+    font-size: 50px;
     text-transform:none;
-    margin-top: 125px;
-    letter-spacing: 2px;
+    margin-top: 100px;
+    letter-spacing: 1px;
     position: relative;
   }
 
