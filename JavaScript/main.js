@@ -40,11 +40,13 @@ function init(sprite) {
 
   animate();
 }
+
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
+
 function animate() {
   starGeo.vertices.forEach(p => {
     p.velocity += p.acceleration
@@ -55,6 +57,7 @@ function animate() {
       p.velocity = 0;
     }
   });
+  
   starGeo.verticesNeedUpdate = true;
   stars.rotation.y += 0.002;
 
@@ -99,7 +102,6 @@ window.onclick = function (event) {
   if (event.target == neptuneModel) {
     neptuneModel.style.display = "none";
   }
-
 }
 
 /* Photo hover change text */
